@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Ünite 2 · Matematik Çalışması Dijital Aracı</title>
+  <style>
+    :root{color-scheme:light;--ink:#172e39;--muted:#4a5e68;--line:#cbd7da;--paper:#fff;--bg:#f3f6f5;--brand:#14536a;--brand2:#e7f1f5;--trial:#216144;--trialbg:#e9f5ee;--warn:#6a4b0c;--warnbg:#fff4d8;--danger:#a32b36;--radius:12px}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}button:disabled{opacity:.48;cursor:not-allowed}button,input,select,textarea{border:1px solid #80959e;border-radius:7px}button{padding:9px 13px;background:white;color:var(--brand);font-weight:650;line-height:1.35}button:hover:not(:disabled){background:var(--brand2)}button.primary{background:var(--brand);color:white;border-color:var(--brand)}button.primary:hover{background:#0c4054}button.danger{color:var(--danger);border-color:#ba6670}button.small{font-size:.82rem;padding:6px 9px}button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{outline:3px solid #e6a028;outline-offset:3px}input,select,textarea{width:100%;padding:9px 10px;background:white;color:var(--ink)}textarea{resize:vertical;min-height:112px}label{display:block;font-weight:650;margin-bottom:5px}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(1.8rem,4vw,2.55rem);line-height:1.15;letter-spacing:-.035em;margin-bottom:12px}h2{font-size:1.22rem;line-height:1.3;margin-bottom:14px}h3{font-size:1rem;margin-bottom:8px}.wrap{max-width:1240px;margin:auto;padding:30px 24px 45px}.eyebrow{color:var(--brand);font-size:.79rem;font-weight:750;letter-spacing:.12em;text-transform:uppercase;margin-bottom:9px}.lead{max-width:880px;color:var(--muted);margin-bottom:20px}.notice{border:1px solid #e2c779;background:var(--warnbg);color:var(--warn);padding:13px 16px;border-radius:9px;margin:14px 0}.notice p:last-child{margin-bottom:0}.muted,.help{color:var(--muted)}.help{font-size:.86rem;margin:5px 0 0}.toolbar{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin:18px 0}.toolbar .spacer{flex:1}.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin-bottom:20px;box-shadow:0 3px 10px #142e3904}.work-grid{display:grid;grid-template-columns:330px minmax(0,1fr);gap:20px;align-items:start}.work-grid .card{margin-bottom:0;min-width:0}.stack{display:grid;gap:15px}.field-pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}.form-actions{display:flex;flex-wrap:wrap;gap:8px}.badge{display:inline-block;padding:3px 8px;border-radius:5px;font-size:.73rem;font-weight:700;line-height:1.4;white-space:normal;background:var(--brand2);color:var(--brand)}.badge.trial{background:var(--trialbg);color:var(--trial)}.badge.warn{background:var(--warnbg);color:var(--warn)}.row-head{display:flex;gap:10px;align-items:baseline;justify-content:space-between;flex-wrap:wrap}.table-scroll{width:100%;overflow:auto;border:1px solid var(--line);border-radius:8px}table{border-collapse:collapse;width:100%;text-align:left;font-size:.86rem}th{background:#edf2f3;font-weight:700;color:#243f4c}th,td{padding:10px;border-bottom:1px solid #dce4e6;vertical-align:top}tbody tr:last-child td{border-bottom:0}caption{text-align:left;font-weight:600;padding:10px;background:#f7f9f9}.records{min-width:700px}.records .answer{min-width:200px;max-width:290px;white-space:pre-wrap;overflow-wrap:anywhere}.records .actions{min-width:94px}.records .actions button{display:block;margin-bottom:6px;width:100%}.code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-weight:700;white-space:nowrap}.empty{border:1px dashed #aabcc2;background:#fafcfc;text-align:center;padding:35px 20px;border-radius:8px;color:var(--muted)}.empty strong{display:block;color:var(--ink);margin-bottom:8px}.filter{display:flex;align-items:center;gap:9px;margin-bottom:15px;flex-wrap:wrap}.filter label{margin:0;font-size:.87rem}.filter select{width:auto;max-width:100%;font-size:.87rem}.summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.summary-grid .card{margin-bottom:0;min-width:0}.summary-section{margin-top:24px}.statline{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.stat{background:#f1f5f5;padding:6px 10px;border-radius:6px;font-size:.82rem}.summary-question{border-top:1px solid var(--line);padding-top:15px;margin-top:17px}.summary-question h3{margin-bottom:8px}.summary-table th,.summary-table td{padding:7px 9px}.summary-table th:last-child{width:52%}.status{min-height:1.6em;font-size:.91rem;margin:8px 0 15px;overflow-wrap:anywhere}.status.ok{color:#1c6345}.status.error{color:var(--danger);font-weight:650}.error-box{color:var(--danger);font-size:.9rem;min-height:0}.error-box:empty{display:none}.form-dirty{font-size:.78rem;color:var(--warn);margin-top:8px}.hidden,[hidden]{display:none!important}details{background:white;border:1px solid var(--line);border-radius:9px;padding:12px 16px;margin-top:18px}summary{font-weight:700;cursor:pointer}details ol{padding-left:22px}details li{margin:7px 0}.log-list{padding-left:20px;font-size:.87rem;overflow-wrap:anywhere;max-height:370px;overflow:auto}.log-list li{margin:10px 0}.footer{font-size:.79rem;color:var(--muted);margin:24px 0 0}.skip{position:absolute;left:12px;top:-80px;background:white;padding:8px;z-index:2}.skip:focus{top:8px}.q-label{font-weight:500;font-size:.88rem;display:block;margin-top:3px}.space-top{margin-top:20px}hr{border:0;border-top:1px solid var(--line);margin:16px 0}.dot{color:#738993;padding:0 6px}@media(max-width:920px){.work-grid{grid-template-columns:1fr}.work-grid .stack{grid-template-columns:1fr 1fr}.work-grid .stack>.full{grid-column:1/-1}.summary-grid{gap:15px}.card{padding:18px}}@media(max-width:640px){.wrap{padding:22px 14px}.summary-grid,.work-grid .stack{grid-template-columns:1fr}.work-grid .stack>.full{grid-column:auto}.toolbar{gap:7px}.toolbar button{font-size:.87rem;padding:9px 10px}.toolbar .spacer{display:none}.summary-table{font-size:.8rem}.card{padding:16px}.field-pair{grid-template-columns:1fr}.notice{font-size:.9rem}.records{min-width:680px}.work-grid{gap:16px}}
+  </style>
+</head>
+<body>
+<a class="skip" href="#editor">Yanıt formuna geç</a>
+<main class="wrap">
+  <header>
+    <div class="eyebrow">Ünite 2 · Matematik çalışması</div>
+    <h1>Matematik Çalışması Dijital Aracı</h1>
+    <p class="lead">2 × n birim kareden oluşan dikdörtgen için verilen yanıtları kaydedin, dağılımları ve boş bırakılan alanları görün. Açıklamaları öğretmen inceler; araç toplam puan veya otomatik muhakeme değerlendirmesi üretmez.</p>
+  </header>
+  <div class="notice" role="note"><strong>Veriler yalnız bu açık sayfada tutulur.</strong> Sayfayı yenilemeden veya kapatmadan önce <strong>JSON kaydedin</strong> ve dosyanın indirildiğini kontrol edin. Yenileme bellekteki çalışmayı siler. Yanıtlar tarayıcınızda işlenir ve sunucuya gönderilmez. Hesap gerekmez.</div>
+  <p class="help">Yalnız kimliksiz, kurmaca eğitim denemeleri içindir. Gerçek öğrenci adı veya başka kişisel bilgi girmeyin.</p>
+
+  <details id="help-panel">
+    <summary>Kısa kullanım yönergesi</summary>
+    <ol>
+      <li><strong>Boş bir çalışma ile başlayın.</strong> Deneme kodunu yazın, yardım koşulunu seçin; boş yanıtlar boş bırakılabilir. “Satırı ekle” ile kaydedin.</li>
+      <li><strong>Hazır örneği görmek için</strong> “6 kurmaca örneği yükle” düğmesini kullanın. Örnekler ve kendi deneme satırlarınız ayrı etiketlenir ve ayrı özetlenir. Örneği düzenlerseniz etiketi bunu gösterir.</li>
+      <li><strong>Yanıtları inceleyin.</strong> Dağılımın paydası o soruya verilen yanıtlardır; eksik sayısı gruptaki tüm satırlar üzerinden gösterilir. Q3 metninin gerekçesini siz değerlendirirsiniz.</li>
+      <li><strong>Çalışmayı koruyun.</strong> JSON; yanıtları, kaynak etiketlerini, yardım koşullarını ve işlem geçmişini birlikte saklar. “JSON geri yükle” ile bu dosyayı yeniden açabilirsiniz.</li>
+      <li><strong>Tablo için CSV alın.</strong> CSV yanıt satırlarını taşır; tüm işlem geçmişi için JSON kullanın. “CSV içe al” bu aracın CSV düzenini okur. CSV hücreleri hesaplama komutu olarak çalıştırılmaz.</li>
+    </ol>
+    <p class="help">Kod yazmanız gerekmez. İçe alma mevcut çalışma alanının yerini alır ve önce onay ister. Tarayıcı kapatma uyarısı kullanılan tarayıcının davranışına bağlıdır; kalıcı kaydınız indirilen JSON dosyasıdır.</p>
+  </details>
+
+  <div class="toolbar" aria-label="Çalışma dosyası işlemleri">
+    <button id="load-samples">6 kurmaca örneği yükle</button>
+    <button id="import-json">JSON geri yükle</button>
+    <button id="import-csv">CSV içe al</button>
+    <span class="spacer"></span>
+    <button id="export-json" class="primary">JSON kaydet</button>
+    <button id="export-csv">CSV indir</button>
+    <button id="clear-all" class="danger">Satırları temizle</button>
+  </div>
+  <input id="json-file" type="file" accept=".json,application/json" hidden>
+  <input id="csv-file" type="file" accept=".csv,text/csv" hidden>
+  <p id="status" class="status" role="status" aria-live="polite">Çalışma boş. Bir deneme satırı ekleyebilir veya kurmaca örnekleri yükleyebilirsiniz.</p>
+
+  <section class="work-grid" aria-label="Yanıt kaydı ve yanıt tablosu">
+    <section class="card" id="editor" aria-labelledby="editor-title">
+      <div class="row-head"><h2 id="editor-title">Deneme satırı ekle</h2><span id="edit-source" class="badge trial">Deneme</span></div>
+      <form id="response-form" novalidate>
+        <div class="stack">
+          <div><label for="code">Kimliksiz deneme kodu</label><input id="code" maxlength="16" autocomplete="off" spellcheck="false" aria-describedby="code-help"><p id="code-help" class="help">Örnek: D01. Harf, rakam, _ veya -; en çok 16 karakter.</p></div>
+          <div><label for="support">Yanıtın yardım koşulu</label><select id="support"><option value="bilinmiyor">Bilinmiyor</option><option value="bagimsiz">Bağımsız</option><option value="ipuclu">İpuçlu</option></select></div>
+          <div><label for="q1">Q1 · Sayısal yanıt<span class="q-label">2 × 5 birim karelik dikdörtgenin çevresi kaç birimdir?</span></label><select id="q1"><option value="">Boş yanıt</option><option value="12">12</option><option value="14">14</option><option value="20">20</option><option value="22">22</option><option value="10">10</option></select></div>
+          <div><label for="q2">Q2 · Genel bağıntı<span class="q-label">2 × n birim karelik dikdörtgenin çevresini hangi ifade gösterir?</span></label><select id="q2"><option value="">Boş yanıt</option><option value="2n+4">2n + 4</option><option value="4n+2">4n + 2</option><option value="2n">2n</option><option value="n+4">n + 4</option></select></div>
+          <div class="full"><label for="q3">Q3 · Şeklin yapısıyla açıklama<span class="q-label">Seçtiğin genel bağıntıyı şeklin yapısını kullanarak açıkla.</span></label><textarea id="q3" maxlength="2000" aria-describedby="q3-help" placeholder="Yanıtı olduğu gibi yazın; yanıt yoksa boş bırakın."></textarea><p id="q3-help" class="help">Metin olarak kaydedilir. Açıklamaya otomatik puan verilmez.</p></div>
+          <div id="form-error" class="error-box full" role="alert"></div>
+          <div class="form-actions full"><button id="save-row" class="primary" type="submit">Satırı ekle</button><button id="cancel-edit" type="button">Formu sıfırla</button></div>
+        </div>
+        <div id="form-dirty" class="form-dirty" aria-live="polite" hidden>Formda henüz satıra kaydedilmemiş değişiklik var.</div>
+      </form>
+    </section>
+    <section class="card" aria-labelledby="records-title">
+      <div class="row-head"><h2 id="records-title">Yanıt kayıtları</h2><span id="row-count" class="badge">0 satır</span></div>
+      <div class="filter"><label for="record-filter">Tabloda göster</label><select id="record-filter"><option value="all">Tüm kaynaklar</option><option value="ornek">Kurmaca örnekler</option><option value="deneme">Kendi deneme satırlarım</option></select></div>
+      <div id="empty-records" class="empty"><strong>Henüz yanıt kaydı yok.</strong>Formdan bir satır ekleyin veya altı kurmaca örneği yükleyin.</div>
+      <div id="records-scroll" class="table-scroll" tabindex="0" role="region" aria-label="Yanıt tablosu; dar ekranda yatay kaydırılabilir" hidden>
+        <table class="records"><thead><tr><th scope="col">Kod / kaynak</th><th scope="col">Yardım</th><th scope="col">Q1</th><th scope="col">Q2</th><th scope="col">Q3 · Açıklama</th><th scope="col">İşlem</th></tr></thead><tbody id="records-body"></tbody></table>
+      </div>
+      <p class="help space-top">“Örnek · düzenlendi” etiketi, hazır örnek üzerinde yapılan değişikliği gösterir. Tablo filtresi aşağıdaki grupların paydalarını değiştirmez.</p>
+    </section>
+  </section>
+
+  <section class="summary-section" aria-labelledby="summary-title">
+    <h2 id="summary-title">Kaynaklara göre ayrı özetler</h2>
+    <p class="help">Q1 ve Q2’deki yüzdeler, o soruya <strong>verilen yanıtlar</strong> üzerinden hesaplanır. Verilen ve eksik sayıları ayrıca <strong>gruptaki tüm satırlar</strong> üzerinden gösterilir. Boşluklardan oluşan Q3 metni eksik sayılır.</p>
+    <div class="summary-grid space-top"><section class="card" id="summary-ornek" aria-label="Kurmaca örneklerin özeti"></section><section class="card" id="summary-deneme" aria-label="Deneme satırlarının özeti"></section></div>
+  </section>
+
+  <details id="audit-panel"><summary id="audit-title">İşlem kaydı · 0 işlem</summary><p class="help">Yükleme, ekleme, düzenleme, silme ve dışa aktarma işlemleri kaydedilir. JSON dosyası tüm geçmişi ve değişen satırların önceki/sonraki durumlarını içerir. Aşağıda son 40 işlem gösterilir.</p><ol id="audit-list" class="log-list"></ol></details>
+  <p class="footer">Araç sürümü <strong id="tool-version">1.0.0</strong><span class="dot">·</span>Tek dosya, çevrimdışı kullanım<span class="dot">·</span>JSON çalışma kaydı / CSV yanıt tablosu</p>
+</main>
+<script>
+(() => {
+  'use strict';
+  const VERSION='1.0.0', SCHEMA=1, FILE_TYPE='OgretmenEgitimi.U2.DijitalKanit';
+  const Q1=['12','14','20','22','10'], Q2=['2n+4','4n+2','2n','n+4'];
+  const SUPPORT={bilinmiyor:'Bilinmiyor',bagimsiz:'Bağımsız',ipuclu:'İpuçlu'};
+  const MAX_ROWS=500, MAX_FILE=10*1024*1024, MAX_LOG=5000;
+  const CSV_HEADERS=['arac_surumu','disa_aktarma_zamani','kaynak','ornek_duzenlendi','kod','yardim_kosulu','Q1','Q2','Q3','Q3_guvenlik_oneki','satir_id','olusturma_zamani','guncelleme_zamani'];
+  const ACTIONS=['ornek_yukleme','ekleme','duzenleme','silme','temizleme','json_ice_alma','csv_ice_alma','json_disa_aktarma','csv_disa_aktarma'];
+  const SAMPLE_DATA=[
+    ['T01','14','2n+4','Üst ve alt n, sağ ve sol 2.'],
+    ['T02','14','2n+4','6, 8, 10 diye ikişer artıyor.'],
+    ['T03','22','4n+2','İlk sütun 6; her yeni sütuna 4 eklerim.'],
+    ['T04','14','4n+2','5+5+2+2=14; genel ifade 4n+2.'],
+    ['T05',null,'2n+4',''],
+    ['T06','10','2n','10 birim kare var.']
+  ];
+  const $=id=>document.getElementById(id);
+  const now=()=>new Date().toISOString();
+  const uid=()=>globalThis.crypto?.randomUUID?globalThis.crypto.randomUUID():'id-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2);
+  const clone=x=>JSON.parse(JSON.stringify(x));
+  let state={sessionId:uid(),createdAt:now(),rows:[],audit:[]};
+  let editingId=null, baseline='', importBusy=false;
+  const setText=(el,text)=>{el.textContent=text;return el;};
+  function node(tag,text,className){const el=document.createElement(tag);if(text!==undefined&&text!==null)el.textContent=text;if(className)el.className=className;return el;}
+  function status(message,error=false){$('status').textContent=message;$('status').className='status '+(error?'error':'ok');}
+  function formValue(){return {code:$('code').value,support:$('support').value,q1:$('q1').value,q2:$('q2').value,q3:$('q3').value};}
+  function dirty(){return JSON.stringify(formValue())!==baseline;}
+  function markDirty(){$('form-dirty').hidden=!dirty();}
+  function nextCode(){let n=1;const taken=new Set(state.rows.filter(r=>r.source==='deneme').map(r=>r.code));while(taken.has('D'+String(n).padStart(2,'0')))n++;return 'D'+String(n).padStart(2,'0');}
+  function resetForm(){editingId=null;$('code').value=nextCode();$('support').value='bilinmiyor';$('q1').value='';$('q2').value='';$('q3').value='';$('editor-title').textContent='Deneme satırı ekle';$('edit-source').textContent='Deneme';$('edit-source').className='badge trial';$('save-row').textContent='Satırı ekle';$('cancel-edit').textContent='Formu sıfırla';$('form-error').textContent='';baseline=JSON.stringify(formValue());markDirty();}
+  function allowDiscard(){return !dirty()||window.confirm('Formdaki değişiklik henüz satıra kaydedilmedi. Bu form değişikliğini bırakmak istiyor musunuz?');}
+  function sourceLabel(row){return row.source==='ornek'?(row.modifiedFromSample?'Örnek · düzenlendi':'Kurmaca örnek'):'Deneme';}
+  function log(action,description,before=[],after=[]){state.audit.push({id:uid(),at:now(),action,description,toolVersion:VERSION,before:clone(before),after:clone(after)});}
+  function countAnswered(rows,key){return rows.filter(r=>key==='q3'?r.q3.trim().length>0:r[key]!==null).length;}
+  function ratio(n,d){return d?n+'/'+d+' · '+new Intl.NumberFormat('tr-TR',{maximumFractionDigits:1}).format(100*n/d)+'%':'— (yanıt yok)';}
+  function renderSummary(source){
+    const host=$('summary-'+source);host.replaceChildren();const rows=state.rows.filter(r=>r.source===source), total=rows.length;
+    host.append(node('h2',source==='ornek'?'Kurmaca örnekler':'Kendi deneme satırlarım'));
+    const totalEl=node('p',total+' satır',source==='ornek'?'badge':'badge trial');totalEl.dataset.testid=source+'-total';host.append(totalEl);
+    if(source==='ornek'&&rows.some(r=>r.modifiedFromSample))host.append(node('p','Bu grupta düzenlenmiş örnek bulunuyor; dağılım güncel yanıtları gösterir.','help'));
+    for(const [key,label,options] of [['q1','Q1 · 2 × 5 çevresi',Q1],['q2','Q2 · Genel bağıntı',Q2]]){
+      const section=node('div',null,'summary-question'),given=countAnswered(rows,key), missing=total-given;section.append(node('h3',label));
+      const stats=node('div',null,'statline'),a=node('span','Verilen: '+(total?given+'/'+total:'0 (grup boş)'),'stat'),m=node('span','Eksik: '+(total?missing+'/'+total:'0 (grup boş)'),'stat');a.dataset.testid=source+'-'+key+'-given';m.dataset.testid=source+'-'+key+'-missing';stats.append(a,m);section.append(stats);
+      const table=node('table',null,'summary-table'),thead=node('thead'),tr=node('tr');['Yanıt','Adet','Verilen yanıtlar içindeki pay'].forEach(v=>{const th=node('th',v);th.scope='col';tr.append(th);});thead.append(tr);table.append(thead);const body=node('tbody');
+      for(const option of options){const n=rows.filter(r=>r[key]===option).length,row=node('tr');row.dataset.answer=option;row.append(node('td',option),node('td',String(n)),node('td',ratio(n,given)));body.append(row);}table.append(body);section.append(table);host.append(section);
+    }
+    const q3=node('div',null,'summary-question'),given=countAnswered(rows,'q3');q3.append(node('h3','Q3 · Yapısal açıklama'));
+    const stats=node('div',null,'statline'),a=node('span','Metin var: '+(total?given+'/'+total:'0 (grup boş)'),'stat'),m=node('span','Eksik: '+(total?(total-given)+'/'+total:'0 (grup boş)'),'stat');a.dataset.testid=source+'-q3-given';m.dataset.testid=source+'-q3-missing';stats.append(a,m);q3.append(stats,node('p','Metnin içeriği ve gerekçesi yanıt tablosundan incelenir. Metin bulunması, açıklamanın niteliğine ilişkin bir sonuç değildir.','help'));host.append(q3);
+    if(total===0)host.append(node('p','Bu grupta henüz satır yok; oran hesaplanmadı.','help'));
+  }
+  function renderRows(){
+    const filter=$('record-filter').value,visible=state.rows.filter(r=>filter==='all'||r.source===filter);$('row-count').textContent=state.rows.length+' satır';$('records-body').replaceChildren();$('empty-records').hidden=visible.length>0;$('records-scroll').hidden=visible.length===0;
+    if(!visible.length){$('empty-records').replaceChildren(node('strong',state.rows.length?'Bu filtrede kayıt yok.':'Henüz yanıt kaydı yok.'),node('span',state.rows.length?'Diğer kaynakları görmek için tablo filtresini değiştirin.':'Formdan bir satır ekleyin veya altı kurmaca örneği yükleyin.'));}
+    for(const r of visible){
+      const tr=node('tr');tr.dataset.rowId=r.id;tr.dataset.code=r.code;tr.dataset.source=r.source;
+      const code=node('td');code.append(node('div',r.code,'code'),node('span',sourceLabel(r),'badge'+(r.source==='deneme'?' trial':'')));
+      const q1=node('td',r.q1===null?'Boş':r.q1),q2=node('td',r.q2===null?'Boş':r.q2),q3=node('td',r.q3.trim()?r.q3:'Boş','answer');
+      const actions=node('td',null,'actions'),edit=node('button','Düzenle','small'),del=node('button','Sil','small danger');edit.type=del.type='button';edit.setAttribute('aria-label',r.code+' '+sourceLabel(r)+' satırını düzenle');del.setAttribute('aria-label',r.code+' '+sourceLabel(r)+' satırını sil');edit.addEventListener('click',()=>editRow(r.id));del.addEventListener('click',()=>deleteRow(r.id));actions.append(edit,del);tr.append(code,node('td',SUPPORT[r.support]),q1,q2,q3,actions);$('records-body').append(tr);
+    }
+  }
+  function renderAudit(){
+    $('audit-title').textContent='İşlem kaydı · '+state.audit.length+' işlem';$('audit-list').replaceChildren();const items=state.audit.slice(-40).reverse();
+    if(!items.length)$('audit-list').append(node('li','Henüz işlem yapılmadı.'));
+    for(const e of items){const li=node('li'),time=node('strong',new Date(e.at).toLocaleString('tr-TR'));li.append(time,document.createTextNode(' — '+e.description+' · v'+e.toolVersion));$('audit-list').append(li);}
+  }
+  function render(){renderRows();renderSummary('ornek');renderSummary('deneme');renderAudit();$('export-csv').disabled=state.rows.length===0;$('clear-all').disabled=state.rows.length===0&&!dirty();}
+  function safeCode(raw){const code=raw.trim().toUpperCase();if(!/^[A-Z0-9][A-Z0-9_-]{0,15}$/.test(code))throw new Error('Kod 1–16 karakter olmalı; yalnız A–Z, 0–9, _ ve - kullanın. Gerçek isim yazmayın.');return code;}
+  function validateForm(){const v=formValue(),row={code:safeCode(v.code),support:v.support,q1:v.q1||null,q2:v.q2||null,q3:v.q3};if(!Object.hasOwn(SUPPORT,row.support))throw new Error('Yardım koşulunu seçin.');if(row.q1!==null&&!Q1.includes(row.q1)||row.q2!==null&&!Q2.includes(row.q2))throw new Error('Sabit yanıt seçeneklerinden birini kullanın.');if(row.q3.length>2000)throw new Error('Açıklama en çok 2000 karakter olabilir.');return row;}
+  function saveRow(event){
+    event.preventDefault();$('form-error').textContent='';
+    try{
+      const value=validateForm(),old=editingId?state.rows.find(r=>r.id===editingId):null,source=old?.source||'deneme';
+      if(state.rows.some(r=>r.source===source&&r.code===value.code&&r.id!==editingId))throw new Error('Bu kaynak grubunda aynı kod var. Farklı bir kimliksiz kod kullanın.');
+      if(!old&&state.rows.length>=MAX_ROWS)throw new Error('Bu çalışma en çok '+MAX_ROWS+' satır içerir. Yeni bir çalışma için önce JSON kaydedin.');
+      const row={id:old?.id||uid(),source,modifiedFromSample:old?.source==='ornek'?true:false,...value,createdAt:old?.createdAt||now(),updatedAt:now()};
+      if(old){state.rows[state.rows.findIndex(r=>r.id===old.id)]=row;log('duzenleme',row.code+' satırı düzenlendi ('+sourceLabel(row)+').',[old],[row]);}else{state.rows.push(row);log('ekleme',row.code+' deneme satırı eklendi.',[],[row]);}
+      resetForm();render();status(value.code+(old?' satırındaki değişiklik kaydedildi.':' deneme satırı eklendi.')+' Kalıcı kayıt için JSON kaydedin.');$('code').focus();
+    }catch(error){$('form-error').textContent=error.message;}
+  }
+  function editRow(id){if(!allowDiscard())return;const r=state.rows.find(r=>r.id===id);if(!r)return;editingId=id;$('code').value=r.code;$('support').value=r.support;$('q1').value=r.q1||'';$('q2').value=r.q2||'';$('q3').value=r.q3;$('editor-title').textContent='Satırı düzenle';$('edit-source').textContent=sourceLabel(r);$('edit-source').className='badge'+(r.source==='deneme'?' trial':'');$('save-row').textContent='Değişikliği kaydet';$('cancel-edit').textContent='Düzenlemeyi bırak';$('form-error').textContent='';baseline=JSON.stringify(formValue());markDirty();$('editor').scrollIntoView({behavior:'smooth',block:'start'});$('code').focus();}
+  function deleteRow(id){const row=state.rows.find(r=>r.id===id);if(!row)return;const extra=editingId===id&&dirty()?' Formdaki kaydedilmemiş değişiklik de bırakılacak.':'';if(!window.confirm(row.code+' ('+sourceLabel(row)+') satırı silinsin mi?'+extra+' Silme işlemi JSON geçmişine kaydedilir.'))return;state.rows=state.rows.filter(r=>r.id!==id);log('silme',row.code+' satırı silindi.',[row],[]);if(editingId===id)resetForm();render();status(row.code+' satırı silindi. İşlem geçmişi korundu.');}
+  function loadSamples(){
+    const old=state.rows.filter(r=>r.source==='ornek'),trialCount=state.rows.length-old.length;if(trialCount+6>MAX_ROWS){status('Örnekler için yeterli satır alanı yok.',true);return;}
+    if(!allowDiscard())return;if(old.length&&!window.confirm('Mevcut '+old.length+' örnek satır, başlangıçtaki altı kurmaca örnekle değiştirilecek. Kendi deneme satırlarınız korunacak. Devam edilsin mi?'))return;
+    const stamp=now(),samples=SAMPLE_DATA.map(([code,q1,q2,q3])=>({id:uid(),source:'ornek',modifiedFromSample:false,code,support:'bilinmiyor',q1,q2,q3,createdAt:stamp,updatedAt:stamp}));state.rows=[...samples,...state.rows.filter(r=>r.source==='deneme')];log('ornek_yukleme','6 kurmaca örnek yüklendi; '+trialCount+' deneme satırı korundu.',old,samples);resetForm();render();status('6 kurmaca örnek yüklendi. Hepsinin yardım koşulu “Bilinmiyor”; kendi deneme satırlarınız ayrı tutuluyor.');
+  }
+  function clearRows(){if(!state.rows.length&&!dirty())return;if(!window.confirm('Tüm '+state.rows.length+' satır ve formdaki kaydedilmemiş değişiklik temizlensin mi? Önce kalıcı bir kopya için JSON kaydedin. İşlem geçmişi bu oturumda korunur.'))return;const before=clone(state.rows);state.rows=[];log('temizleme',before.length+' satır temizlendi; işlem geçmişi korundu.',before,[]);resetForm();render();status('Yanıt satırları temizlendi. İşlem geçmişi bu oturumda korunuyor.');}
+  function canExport(){if(!dirty())return true;status('Formda kaydedilmemiş değişiklik var. Önce “Satırı ekle” / “Değişikliği kaydet” düğmesini kullanın veya formu sıfırlayın.',true);$('save-row').focus();return false;}
+  function fileStamp(stamp){return stamp.replace(/[:.]/g,'-');}
+  function download(content,mime,name){const blob=new Blob([content],{type:mime}),url=URL.createObjectURL(blob),a=node('a');a.href=url;a.download=name;a.style.display='none';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1500);}
+  function exportJSON(){if(!canExport())return;const stamp=now();log('json_disa_aktarma','JSON indirme dosyası hazırlandı ('+state.rows.length+' satır).');const payload={fileType:FILE_TYPE,schemaVersion:SCHEMA,toolVersion:VERSION,sessionId:state.sessionId,createdAt:state.createdAt,exportedAt:stamp,rows:clone(state.rows),audit:clone(state.audit)};download(JSON.stringify(payload,null,2),'application/json;charset=utf-8','u2_kanit_'+fileStamp(stamp)+'.json');renderAudit();status('JSON dosyası indirme için hazırlandı. İndirmenin tamamlandığını kontrol edin; bu sayfa kalıcı kayıt tutmaz.');}
+  function needsFormulaProtection(s){return /^[\s\u0000-\u001f\u007f]*[=+\-@']/.test(s);}
+  function csvCell(value){const s=String(value??'');return '"'+s.replace(/"/g,'""')+'"';}
+  function exportCSV(){if(!canExport()||!state.rows.length)return;const stamp=now(),lines=[CSV_HEADERS.map(csvCell).join(',')];for(const r of state.rows){const protect=needsFormulaProtection(r.q3);const cells=[VERSION,stamp,r.source,r.modifiedFromSample?'evet':'hayir',r.code,r.support,r.q1??'',r.q2??'',protect?"'"+r.q3:r.q3,protect?'evet':'hayir',r.id,r.createdAt,r.updatedAt];lines.push(cells.map(csvCell).join(','));}log('csv_disa_aktarma','CSV indirme dosyası hazırlandı ('+state.rows.length+' satır).');download('\uFEFF'+lines.join('\r\n')+'\r\n','text/csv;charset=utf-8','u2_yanitlar_'+fileStamp(stamp)+'.csv');renderAudit();status('CSV dosyası hazırlandı. Formül başlangıçları metin olarak korundu; tüm işlem geçmişi için ayrıca JSON kaydedin.');}
+  function object(value,label){if(!value||typeof value!=='object'||Array.isArray(value))throw new Error(label+' nesne biçiminde olmalı.');return value;}
+  function text(value,label,max=2000){if(typeof value!=='string'||value.length>max)throw new Error(label+' geçerli bir metin değil.');return value;}
+  function date(value,label){text(value,label,40);if(!Number.isFinite(Date.parse(value)))throw new Error(label+' geçerli bir tarih değil.');return value;}
+  function identifier(value,label){text(value,label,90);if(!/^[A-Za-z0-9_-]+$/.test(value))throw new Error(label+' geçersiz.');return value;}
+  function validateRow(raw){
+    const r=object(raw,'Satır');if(!['ornek','deneme'].includes(r.source))throw new Error('Satır kaynağı ornek veya deneme olmalı.');if(typeof r.modifiedFromSample!=='boolean')throw new Error('Örnek düzenleme bilgisi eksik.');if(r.source==='deneme'&&r.modifiedFromSample)throw new Error('Deneme satırı örnek düzenlemesi olarak etiketlenemez.');const code=safeCode(text(r.code,'Kod',16));if(code!==r.code)throw new Error('Kod büyük harfli ve kenar boşluksuz olmalı.');if(!Object.hasOwn(SUPPORT,r.support))throw new Error('Yardım koşulu geçersiz.');if(r.q1!==null&&!Q1.includes(r.q1))throw new Error('Q1 sabit seçeneklerden biri veya boş olmalı.');if(r.q2!==null&&!Q2.includes(r.q2))throw new Error('Q2 sabit seçeneklerden biri veya boş olmalı.');return {id:identifier(r.id,'Satır kimliği'),source:r.source,modifiedFromSample:r.modifiedFromSample,code,support:r.support,q1:r.q1,q2:r.q2,q3:text(r.q3,'Q3 açıklaması'),createdAt:date(r.createdAt,'Satır oluşturma zamanı'),updatedAt:date(r.updatedAt,'Satır güncelleme zamanı')};
+  }
+  function validateRows(raw){if(!Array.isArray(raw)||raw.length>MAX_ROWS)throw new Error('Yanıt listesi en çok '+MAX_ROWS+' satır olabilir.');const rows=raw.map(validateRow),ids=new Set(),codes=new Set();for(const r of rows){if(ids.has(r.id)||codes.has(r.source+'|'+r.code))throw new Error('Dosyada tekrarlanan satır kimliği veya aynı grupta yinelenen kod var.');ids.add(r.id);codes.add(r.source+'|'+r.code);}return rows;}
+  function validateAudit(raw){if(!Array.isArray(raw)||raw.length>MAX_LOG)throw new Error('İşlem geçmişi en çok '+MAX_LOG+' kayıt olabilir.');return raw.map(item=>{const e=object(item,'İşlem');if(!ACTIONS.includes(e.action))throw new Error('Tanınmayan işlem türü.');return {id:identifier(e.id,'İşlem kimliği'),at:date(e.at,'İşlem zamanı'),action:e.action,description:text(e.description,'İşlem açıklaması'),toolVersion:text(e.toolVersion,'Araç sürümü',30),before:validateRows(e.before),after:validateRows(e.after)};});}
+  function parseJSON(contents){const raw=object(JSON.parse(contents),'JSON dosyası');const compatibleType=typeof raw.fileType==='string'&&/^[A-Za-z][A-Za-z0-9_-]*\.U2\.DijitalKanit$/.test(raw.fileType);if(!compatibleType||raw.schemaVersion!==SCHEMA)throw new Error('Bu dosya desteklenen Ünite 2 JSON çalışma kaydı değil.');text(raw.toolVersion,'Araç sürümü',30);date(raw.exportedAt,'Dışa aktarma zamanı');return {sessionId:identifier(raw.sessionId,'Oturum kimliği'),createdAt:date(raw.createdAt,'Oluşturma zamanı'),rows:validateRows(raw.rows),audit:validateAudit(raw.audit)};}
+  function parseCSV(contents){
+    const input=contents.replace(/^\uFEFF/,'');let rows=[],row=[],field='',quoted=false,closed=false;
+    for(let i=0;i<input.length;i++){const c=input[i];if(quoted){if(c==='"'){if(input[i+1]==='"'){field+='"';i++;}else{quoted=false;closed=true;}}else field+=c;continue;}
+      if(c==='"'){if(field!==''||closed)throw new Error('CSV tırnak düzeni geçersiz.');quoted=true;}
+      else if(c===','){row.push(field);field='';closed=false;}
+      else if(c==='\r'||c==='\n'){if(c==='\r'&&input[i+1]==='\n')i++;row.push(field);if(row.some(v=>v!==''))rows.push(row);row=[];field='';closed=false;}
+      else{if(closed)throw new Error('CSV kapanış tırnağından sonra beklenmeyen karakter var.');field+=c;}
+    }
+    if(quoted)throw new Error('CSV içinde kapanmamış tırnak var.');if(field!==''||row.length||closed){row.push(field);if(row.some(v=>v!==''))rows.push(row);}
+    if(!rows.length||rows[0].join('|')!==CSV_HEADERS.join('|'))throw new Error('Bu aracın CSV sütun düzenini kullanın.');
+    const converted=rows.slice(1).map(c=>{if(c.length!==CSV_HEADERS.length)throw new Error('CSV satırındaki sütun sayısı uyuşmuyor.');if(c[0]!==VERSION)throw new Error('CSV araç sürümü desteklenmiyor.');date(c[1],'CSV dışa aktarma zamanı');if(!['evet','hayir'].includes(c[3])||!['evet','hayir'].includes(c[9]))throw new Error('CSV işaret alanı geçersiz.');let q3=c[8];if(c[9]==='evet'){if(!q3.startsWith("'"))throw new Error('CSV güvenlik öneki eksik.');q3=q3.slice(1);}return {id:c[10],source:c[2],modifiedFromSample:c[3]==='evet',code:c[4],support:c[5],q1:c[6]||null,q2:c[7]||null,q3,createdAt:c[11],updatedAt:c[12]};});
+    return {sessionId:uid(),createdAt:now(),rows:validateRows(converted),audit:[]};
+  }
+  async function importFile(file,kind){
+    if(!file||importBusy)return;importBusy=true;
+    try{
+      if(file.size>MAX_FILE)throw new Error('Dosya 10 MB sınırını aşıyor.');const contents=await file.text(),incoming=kind==='json'?parseJSON(contents):parseCSV(contents);
+      const detail=kind==='json'?'JSON dosyasındaki işlem geçmişi de yüklenir.':'CSV yalnız yanıt satırlarını içerir; eski işlem geçmişi bu dosyada bulunmaz.';
+      if(!window.confirm(incoming.rows.length+' satır içe alınacak; mevcut '+state.rows.length+' satır, bu oturumdaki işlem geçmişi ve form değişiklikleri bu çalışma alanından kaldırılacak. '+detail+' Mevcut çalışmayı korumak istiyorsanız önce JSON kaydedin. Devam edilsin mi?')){status('İçe alma iptal edildi; mevcut çalışma korundu.');return;}
+      const before=clone(state.rows);state=incoming;log(kind==='json'?'json_ice_alma':'csv_ice_alma',(kind==='json'?'JSON':'CSV')+' içe alındı: '+state.rows.length+' satır. Önceki çalışma alanında '+before.length+' satır vardı.',before,state.rows);resetForm();render();status((kind==='json'?'JSON çalışma kaydı':'CSV yanıt satırları')+' yüklendi. Dosyadaki metinler çalıştırılmadan gösteriliyor.');
+    }catch(error){status('Dosya yüklenemedi. Mevcut çalışma korundu. '+error.message,true);}finally{importBusy=false;$('json-file').value='';$('csv-file').value='';}
+  }
+  $('response-form').addEventListener('submit',saveRow);
+  $('response-form').addEventListener('input',()=>{markDirty();$('clear-all').disabled=state.rows.length===0&&!dirty();});
+  $('response-form').addEventListener('change',()=>{markDirty();$('clear-all').disabled=state.rows.length===0&&!dirty();});
+  $('cancel-edit').addEventListener('click',()=>{if(!allowDiscard())return;resetForm();render();status('Form sıfırlandı; kaydedilmiş yanıt satırları korundu.');});
+  $('load-samples').addEventListener('click',loadSamples);$('record-filter').addEventListener('change',renderRows);$('clear-all').addEventListener('click',clearRows);$('export-json').addEventListener('click',exportJSON);$('export-csv').addEventListener('click',exportCSV);
+  $('import-json').addEventListener('click',()=>$('json-file').click());$('import-csv').addEventListener('click',()=>$('csv-file').click());$('json-file').addEventListener('change',e=>importFile(e.target.files[0],'json'));$('csv-file').addEventListener('change',e=>importFile(e.target.files[0],'csv'));
+  window.addEventListener('beforeunload',event=>{if(state.rows.length||state.audit.length||dirty()){event.preventDefault();event.returnValue='';}});
+  resetForm();render();
+})();
+</script>
+</body>
+</html>
